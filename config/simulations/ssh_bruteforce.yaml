@@ -1,0 +1,8 @@
+name: SSH Bruteforce
+description: "Simulates a typical SSH brute force attack from a single IP"
+frequency_seconds: 1.5
+events:
+  - type: SSH_LOGIN_FAILED
+    message: "Failed password for root from 198.51.100.44 port 22 ssh2"
+    source_ip: 198.51.100.44
+    target_asset: "web-server-01"
