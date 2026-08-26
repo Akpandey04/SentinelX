@@ -4,6 +4,15 @@ from email.message import EmailMessage
 import csv
 import datetime
 
+# Load local .env if it exists
+env_path = os.path.join(os.path.dirname(__file__), '..', '..', '.env')
+if os.path.exists(env_path):
+    with open(env_path, 'r') as f:
+        for line in f:
+            if '=' in line and not line.strip().startswith('#'):
+                k, v = line.strip().split('=', 1)
+                os.environ[k] = v
+
 HISTORY_FILE = "mini_soc_siem_alert_history.csv"
 
 # Resolve path gracefully regardless of where the script is executed
@@ -30,8 +39,8 @@ def send_alerts_to_list(attachment_path: str):
     
     smtp_host = os.getenv("SMTP_HOST", "smtp.gmail.com")
     smtp_port = int(os.getenv("SMTP_PORT", "587"))
-    smtp_user = os.getenv("SMTP_USER", "forautotesting1@gmail.com")
-    smtp_pass = os.getenv("SMTP_PASS", "clllsdemjcplscjd")
+    smtp_user = os.getenv("SMTP_USER", "your_email@gmail.com")
+    smtp_pass = os.getenv("SMTP_PASS", "your_app_password")
     from_email = os.getenv("FROM_EMAIL", smtp_user)
     
     recipients = []
