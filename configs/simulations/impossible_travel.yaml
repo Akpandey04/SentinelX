@@ -1,0 +1,8 @@
+name: Impossible Travel
+description: "Simulates a login from India followed instantly by a login from Russia"
+frequency_seconds: 15
+events:
+  - type: IMPOSSIBLE_TRAVEL
+    message: "User adarsh.p logged in from 103.45.67.8 (IN) and 45.33.1.2 (RU) within 10 mins"
+    source_ip: 45.33.1.2
+    target_asset: "vpn-gateway-01"

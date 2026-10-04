@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it."
+authors:
+  - family-names: "Pandey"
+    given-names: "Adarsh"
+title: "SentinelX: Lightweight Security Monitoring System"
+version: 1.0.0
+date-released: 2026-10-04
+url: "https://github.com/Akpandey04/SentinelX"

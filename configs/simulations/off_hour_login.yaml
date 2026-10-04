@@ -1,0 +1,8 @@
+name: Off Hour Login
+description: "Simulates a successful login during highly unusual hours"
+frequency_seconds: 30
+events:
+  - type: OFF_HOUR_LOGIN
+    message: "Successful VPN auth for user employee_01 at 03:00 AM on Sunday"
+    source_ip: 198.51.100.9
+    target_asset: "vpn-gateway-01"

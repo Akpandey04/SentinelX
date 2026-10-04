@@ -1,0 +1,4 @@
+incident_id,attacker_ip,target_asset,alert_count
+INC-24D223FB,1.1.1.1,10.0.0.1,2
+INC-632A4629,2.2.2.2,10.0.0.1,1
+INC-E0961051,1.1.1.1,10.0.0.2,1

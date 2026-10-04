@@ -1,0 +1,8 @@
+name: Brute Force Success
+description: "Simulates 15 failed logins followed by a success"
+frequency_seconds: 25
+events:
+  - type: BRUTE_FORCE_SUCCESS
+    message: "15 failed SSH logins for user root followed by successful login from same IP"
+    source_ip: 104.22.1.1
+    target_asset: "web-server-02"
