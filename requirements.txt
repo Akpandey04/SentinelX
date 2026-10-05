@@ -8,3 +8,4 @@ pdfkit
 jinja2
 schedule
 matplotlib
+pytest>=7.0.0
